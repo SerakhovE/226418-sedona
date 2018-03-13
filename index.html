@@ -94,17 +94,37 @@
   				</li>
   			</ul>
   		</section>
-  		<div class="last">
-  			<h1>Заинтересовались?</h1>
+
+      <section class="search-form">
+  			<h2>Заинтересовались?</h2>
   			<p>Укажите предпологаемые даты поездки, и мы покажем вам лучшее предложения гостиниц в Седоне</p>
-  		</div>
-  		<section class="form-search">
-  			<h2>Поиск гостиницы в Седоне</h2>
-  			<!-- Тут будет блок с формой поиска гостиницы -->
-  		</section>
-  		<div class="map">
-  			<!-- Тут будет блок с картой -->
-  		</div>
+        <div class="map">
+        </div>
+        <form action="#" method="post">
+          <h3>Поиск гостиницы в Седоне</h3>
+          <p class="full-width">       
+            <label for="arrival-id">Дата заезда:</label>
+            <input class="form-date" type="text" name="date-arrival" id="arrival-id" value="24.04.2017">
+          </p>
+          <p class="full-width">
+            <label for="departure-id">Дата выезда:</label>
+            <input class="form-date" type="text" name="date-departure" id="departure-id" value="04.07.2017">
+          </p>
+          <p class="half-width">
+            <label for="adults-id">Взрослые:</label>
+            <button type="button">-</button>
+            <input type="number" name="adults-sum" id="adults-id" value="2">
+            <button type="button">+</button>
+          </p>
+          <p class="half-width">
+            <label for="child-id">Дети:</label>
+            <button type="button">-</button>
+            <input type="number" name="child-sum" id="child-id" value="0">
+            <button type="button">+</button>
+          </p>
+          <button type="button">Найти</button>
+        </form>
+      </section>
   	</main>
     
   	<footer class="main-footer">
