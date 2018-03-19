@@ -71,7 +71,7 @@
                 <output name="sum-max">3000</output>
                 <input type="range" name="cost-sum" min="0" max="5000" value="3000">
                 <div class="search-button">
-                  <input type="submit" name="show" value="Показать" disabled>
+                  <input type="submit" name="show" value="Показать">
                 </div>
               </fieldset>
             </div>
@@ -84,15 +84,25 @@
   				<p>Найдено: <span>3</span></p>
   				<p>Соритировка:</p>
   				<ul class="results-list">
-  					<li><a href="#">По цене</a></li>
-  					<li><a href="#">По типу</a></li>
-  					<li><a href="#">По рейтингу</a></li>
+  					<li>
+              <a href="#cost">По цене</a>
+            </li>
+  					<li>
+              <a href="#type">По типу</a>
+            </li>
+  					<li>
+              <a href="#rating">По рейтингу</a>
+            </li>
   				</ul>
   			</div>
   			<div class="results-sort">
   				<ul class="results-sort-list">
-  					<li><a href="#up">Вверх</a></li>
-  					<li><a href="#down">Вниз</a></li>
+  					<li>
+              <a href="#up">Вверх</a>
+            </li>
+  					<li>
+              <a href="#down">Вниз</a>
+            </li>
   				</ul>
   			</div>
   		</section>
@@ -109,10 +119,10 @@
   					<li>
   						<p>от 4000 р.</p>
   					</li>
-  					<li>
+  					<li class="item-list-button">
   						<a href="#">Подробнее</a>
   					</li>
-  					<li>
+  					<li class="item-list-button">
   						<a href="#">Забронировать</a>
   					</li>
   				</ul>
@@ -138,12 +148,12 @@
   					<li>
   						<p>от 3000 р.</p>
   					</li>
-  					<li>
-  						<a href="#">Подробнее</a>
-  					</li>
-  					<li>
-  						<a href="#">Забронировать</a>
-  					</li>
+            <li class="item-list-button">
+              <a href="#">Подробнее</a>
+            </li>
+            <li class="item-list-button">
+              <a href="#">Забронировать</a>
+            </li>
   				</ul>
   			</div>
   			<div class="item-rating">
@@ -166,12 +176,12 @@
   					<li>
   						<p>от 2000 р.</p>
   					</li>
-  					<li>
-  						<a href="#">Подробнее</a>
-  					</li>
-  					<li>
-  						<a href="#">Забронировать</a>
-  					</li>
+            <li class="item-list-button">
+              <a href="#">Подробнее</a>
+            </li>
+            <li class="item-list-button">
+              <a href="#">Забронировать</a>
+            </li>
   				</ul>
   			</div>
   			<div class="item-rating">
@@ -185,9 +195,11 @@
   	</main>
 
   	<footer class="main-footer">
-  		<div>
-  			<p>#VISITSEDONA</p>
-  		</div>
+  		<div class="visit-sedona-instagram">
+        <p>
+          <a href="#Instagram">#VISITSEDONA</a>
+        </p>
+      </div>
   		<div class="social">
   			<ul class="social-button">
   				<li class="social-button-item">
