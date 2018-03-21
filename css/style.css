@@ -1,0 +1,302 @@
+body {
+	margin: 0;
+  	padding: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #000000;
+
+	background-color: #f2f2f2;
+}
+
+a {
+  	text-decoration: none;
+  	font-weight: 700;
+}
+
+.visually-hidden {
+  	position: absolute;
+  	clip: rect(0 0 0 0);
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
+}
+
+.main-navigation {
+	background-color: #ffffff;
+}
+
+.main-menu {
+	list-style: none;
+}
+
+.main-menu a {
+	color: #000000;
+}
+
+.main-menu .link-actuve {
+	color: #766357;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+	color: #81b3d2;
+}
+
+.main-menu a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.banner {
+	background-color: #81b3d2;
+	background-image: 
+		url(../img/banner-botton.png),
+		url(../img/bg-photo.jpg);
+	background-position: 
+		bottom center,
+		top center;
+  	background-repeat: 
+  		no-repeat,
+  		no-repeat;
+}
+
+.banner-logo {
+	text-align: center;
+}
+
+.container {
+	text-align: center;
+}
+
+.intro {
+	background-color: #ffffff;
+}
+ .intro h2 {
+ 	font-size: 21px;
+ 	font-weight: 700;
+ }
+
+.intro p {
+	color: #333333;
+}
+
+.advantages-list {
+	list-style: none;
+	color: #ffffff;
+
+	background-color: #81b3d2;
+}
+
+.advantages-list h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.advantages-list p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+}
+
+.features-list {
+	list-style: none;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.features-list h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.features-list p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+}
+
+.last {
+	background-color: #eeeeee;
+	color: #000000;
+}
+
+.last p {
+	color: #333333;
+}
+
+.search-form {
+	background-color: #ffffff;
+}
+
+.search-form h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+}
+
+.search-form p {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #333333;
+}
+
+.search {
+	background-color: #766357;
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.search:hover {
+	background-color: #604e43;
+}
+
+.search:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.block-search p,
+.block-search input[type="text"],
+.block-search input[type="number"] {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.block-search input[type="text"],
+.block-search input[type="number"],
+.plus-minus-button {
+	border: none;
+	background-color: #f2f2f2;
+}
+
+.block-search input:hover {
+	background-color: #ebebeb;
+}
+
+.block-search input:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+.plus-minus-button {
+	color: #a9a9a9;
+	font-weight: 700;
+}
+
+.plus-minus-button:hover {
+	color: #000000;
+}
+
+.plus-minus-button:active {
+	color: #81b3d2;
+}
+
+.button-find {
+	border: none;
+	background-color: #81b3d2;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.button-find:hover,
+.social-button a:hover {
+	background-color: #669ec0;
+}
+
+.button-find:active,
+.social-button a:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+	text-align: center;
+}
+
+.visit-sedona-instagram a {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.social-button {
+	list-style: none;
+}
+
+.social-button a {
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+/** Вторая страница **/
+
+.form-settings {
+	background-color: #81b3d2;
+	background-image: url(../img/filter-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	text-align: left;
+}
+
+.form-settings fieldset {
+	border: none;
+}
+
+.form-settings legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+.form-settings ul {
+	list-style: none;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.results {
+	background-color: #ffffff;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.results p:nth-child(2) {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+}
+
+.results a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.results ul {
+	list-style: none;
+}
+
+.results .active-results {
+	border: none;
+	color: #81b3d2;
+}

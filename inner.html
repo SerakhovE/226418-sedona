@@ -3,27 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Гостиницы</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 	<header class="main-header">
-  		<nav class="main-navigation">
-  			<ul class="main-menu">
-  				<li><a href="info.html">Информация</a></li>
-  				<li><a href="galery.html">Фото и видео</a></li>
-  				<li><a href="map.html">Катра штата</a></li>
-  				<li><a href="inner.html">Гостиницы</a></li>
-  				<li>
-  					<a href="index.html" title="Главная страница">
-  						<img src="img/logo.png" width="138" height="70" alt="Logo City of Sedona">
-  					</a>
-  				</li>
-  			</ul>
-  		</nav>
+  		<a href="index.html" title="Главная страница">
+        <img src="img/logo.png" width="138" height="70" alt="Logo City of Sedona">
+      </a>
+      <nav class="main-navigation">
+        <ul class="main-menu">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="galery.html">Фото и видео</a></li>
+          <li><a href="map.html">Катра штата</a></li>
+          <li><a class="link-actuve" href="inner.html">Гостиницы</a></li>
+        </ul>
+      </nav>
   	</header>
 
   	<main class="container">
-  		<div class="form">
+  		<div class="form-settings">
   			<div class="form-settings-search">
   				<form action="#" method="post">
             <div class="infrastructure">
@@ -85,7 +86,7 @@
   				<p>Соритировка:</p>
   				<ul class="results-list">
   					<li>
-              <a href="#cost">По цене</a>
+              <a class="active-results" href="#cost">По цене</a>
             </li>
   					<li>
               <a href="#type">По типу</a>
@@ -98,10 +99,10 @@
   			<div class="results-sort">
   				<ul class="results-sort-list">
   					<li>
-              <a href="#up">Вверх</a>
+              <a href="#up"><img src="img/icon-up-dir.svg" alt="Вверх">Вверх</a>
             </li>
   					<li>
-              <a href="#down">Вниз</a>
+              <a href="#down"><img src="img/icon-down-dir.svg" alt="Вниз">Вниз</a>
             </li>
   				</ul>
   			</div>
