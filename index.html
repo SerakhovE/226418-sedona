@@ -108,9 +108,15 @@
   			  <h2>Заинтересовались?</h2>
   			  <p>Укажите предпологаемые даты поездки,<br>и мы покажем вам лучшее предложения гостиниц в Седоне</p>
         </div>
+        <div class="map">
+          <!--<p>
+            <img src="img/map.jpg" width="1200" height="593" alt="Седона на карте">
+          </p>-->
+        </div>
         <div class="block-search">
         <form class="modal-block" action="#" method="post">
           <button class="search" type="button">Поиск гостиницы в Седоне</button>
+          <div class="wrapper-modal-block">
           <p class="full-width">       
             <label for="arrival-id">Дата заезда:</label>
             <input class="form-date" type="text" name="date-arrival" id="arrival-id" value="24.04.2017">
@@ -120,24 +126,20 @@
             <input class="form-date" type="text" name="date-departure" id="departure-id" value="04.07.2017">
           </p>
           <p class="half-width">
-            <label for="adults-id">Взрослые:</label>
+            <label class="adults" for="adults-id">Взрослые:</label>
             <button class="plus-minus-button" type="button">-</button>
             <input type="number" name="adults-sum" id="adults-id" value="2">
             <button class="plus-minus-button" type="button">+</button>
           </p>
           <p class="half-width">
-            <label for="child-id">Дети:</label>
+            <label class="child" for="child-id">Дети:</label>
             <button class="plus-minus-button" type="button">-</button>
             <input type="number" name="child-sum" id="child-id" value="0">
             <button class="plus-minus-button" type="button">+</button>
           </p>
           <button class="button-find" type="button">Найти</button>
+          </div>
         </form>
-        </div>
-        <div class="map">
-          <!--<p>
-            <img src="img/map.jpg" width="1200" height="593" alt="Седона на карте">
-          </p>-->
         </div>
       </section>
   	</main>
@@ -162,12 +164,11 @@
   			</ul>
   		</div>
   		<div class="main-footer-copyright">
-  			<p>WebSite by
+  			<p>WebSite by</p>
   			  <a href="https://htmlacademy.ru/intensive/htmlcss">
   				  <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
   			  </a>
-        </p>
-  		</div>
+        </div>
   	</footer>
 
   </body>
