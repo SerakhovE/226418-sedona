@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<title>Гостиницы</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+  	<meta charset="UTF-8">
+  	<title>Гостиницы</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
-	<header class="main-header">
+    <!-- Шапка -->
+
+    <header class="main-header">
   		<a class="logo" href="index.html" title="Главная страница">
         <img src="img/logo.png" width="138" height="70" alt="Logo City of Sedona">
       </a>
       <nav class="main-navigation">
         <ul class="main-menu">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="galery.html">Фото и видео</a></li>
-          <li><a href="map.html">Катра штата</a></li>
-          <li><a class="link-active" href="inner.html">Гостиницы</a></li>
+          <li>
+            <a href="#info">Информация</a>
+          </li>
+          <li>
+            <a href="#galery">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#map">Катра штата</a>
+          </li>
+          <li>
+            <a class="link-active" href="inner.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
   	</header>
 
+    <!-- Основное содержимое -->
+
   	<main class="container">
+
+      <!-- Блок с формой -->
+
   		<div class="form-settings">
   			<div class="form-settings-search">
   				<form class="form-columns" action="#" method="post">
@@ -79,10 +94,15 @@
   				</form>
   			</div>
   		</div>
+
+      <!-- Блок сортировки результатов -->
+
   		<section class="results">
         <h1 class="visually-hidden">Результат поиска гостиниц городка «Седона»</h1>
   			<div class="results-search">
-  				<p>Найдено: <span>3</span></p>
+  				<p>Найдено: 
+            <span>3</span>
+          </p>
   				<p>Сортировка:</p>
   				<ul class="results-list">
   					<li class="results-list-item">
@@ -107,111 +127,147 @@
   				</ul>
   			</div>
   		</section>
+
+      <!-- Список результатов -->
+
   		<section class="results-page">
         <h2 class="visually-hidden">Список гостиниц городка «Седона»</h2>
-  			
+        
         <div class="wrapper-item">
-        <div class="item">
-          <div class="mini-foto">
-            <img src="img/hotel-1.jpg" width="135" height="90" alt="Фото гостиницы">
+          <div class="item">
+            <div class="mini-foto">
+              <img src="img/hotel-1.jpg" width="135" height="90" alt="Фото гостиницы">
+            </div>
+  				  <ul class="item-list">
+  				  	<li class="hotel-item">
+  				  		<a href="#hotel-item">Amara resort & spa</a>
+  				  	</li>
+  				  	<li>
+  				  		<p>Гостиница</p>
+  				  	</li>
+  				  	<li>
+  				  		<p>от 4000 р.</p>
+  				  	</li>
+  				  	<li class="button-detailed">
+  				  		<a href="#detailed">Подробнее</a>
+  				  	</li>
+  				  	<li class="button-book">
+  				  		<a href="#book">Забронировать</a>
+  				  	</li>
+  				  </ul>
           </div>
-  				<ul class="item-list">
-  					<li class="hotel-item">
-  						<a href="#hotel-item">Amara resort & spa</a>
-  					</li>
-  					<li>
-  						<p>Гостиница</p>
-  					</li>
-  					<li>
-  						<p>от 4000 р.</p>
-  					</li>
-  					<li class="button-detailed">
-  						<a href="#detailed">Подробнее</a>
-  					</li>
-  					<li class="button-book">
-  						<a href="#book">Забронировать</a>
-  					</li>
-  				</ul>
-  			</div>
-  			<div class="item-rating">
-  				<div class="item-rating-stars">
-  					<span class="rating-stars"><img src="img/star.svg" alt="*"></span>
-  					<span class="rating-stars"><img src="img/star.svg" alt="*"></span>
-  					<span class="rating-stars"><img src="img/star.svg" alt="*"></span>
-  					<span class="rating-stars"><img src="img/star.svg" alt="*"></span>
-  				</div>
-  				<p class="rating">Рейтинг: 8.5</p>
-  			</div>
+          <div class="item-rating">
+          	<div class="item-rating-stars">
+          		<span class="rating-stars">
+                <img src="img/star.svg" alt="*">
+              </span>
+          		<span class="rating-stars">
+                <img src="img/star.svg" alt="*">
+              </span>
+          		<span class="rating-stars">
+                <img src="img/star.svg" alt="*">
+              </span>
+          		<span class="rating-stars">
+                <img src="img/star.svg" alt="*">
+              </span>
+          	</div>
+            <div class="wrapper-rating">
+              <p class="rating">Рейтинг: 8,5</p>
+            </div>
+          </div>
         </div>
 
         <div class="wrapper-item">
-  			<div class="item">
-          <div class="mini-foto">
-  				  <img src="img/hotel-2.jpg" width="135" height="90" alt="Фото гостиницы">
+          <div class="item">
+            <div class="mini-foto">
+          	  <img src="img/hotel-2.jpg" width="135" height="90" alt="Фото гостиницы">
+            </div>
+          	<ul class="item-list">
+          		<li class="hotel-item">
+                <a href="#hotel-item">Desert quail inn</a>
+          		</li>
+          		<li>
+          			<p>Мотель</p>
+          		</li>
+          		<li>
+          			<p>от 3000 р.</p>
+          		</li>
+              <li class="button-detailed">
+                <a href="#detailed">Подробнее</a>
+              </li>
+              <li class="button-book">
+                <a href="#book">Забронировать</a>
+              </li>
+          	</ul>
           </div>
-  				<ul class="item-list">
-  					<li class="hotel-item">
-              <a href="#hotel-item">Desert quail inn</a>
-  					</li>
-  					<li>
-  						<p>Мотель</p>
-  					</li>
-  					<li>
-  						<p>от 3000 р.</p>
-  					</li>
-            <li class="button-detailed">
-              <a href="#detailed">Подробнее</a>
-            </li>
-            <li class="button-book">
-              <a href="#book">Забронировать</a>
-            </li>
-  				</ul>
-  			</div>
-  			<div class="item-rating">
-  				<div class="item-rating-stars">
-  					<span class="rating-stars"><img src="img/star.svg" alt="*"></span>
-  					<span class="rating-stars"><img src="img/star.svg" alt="*"></span>
-  					<span class="rating-stars"><img src="img/star.svg" alt="*"></span>
-  				</div>
-  				<p class="rating">Рейтинг: 8.9</p>
-  			</div>
+          <div class="item-rating">
+          	<div class="item-rating-stars">
+          		<span class="rating-stars">
+                <img src="img/star.svg" alt="*">
+              </span>
+          		<span class="rating-stars">
+                <img src="img/star.svg" alt="*">
+              </span>
+          		<span class="rating-stars">
+                <img src="img/star.svg" alt="*">
+              </span>
+          	</div>
+          	<div class="wrapper-rating">
+              <p class="rating">Рейтинг: 8,9</p>
+            </div>
+          </div>
         </div>
 
   			<div class="wrapper-item">
-        <div class="item">
-  				<div class="mini-foto">
-            <img src="img/hotel-3.jpg" width="135" height="90" alt="Фото гостиницы">
+          <div class="item">
+          	<div class="mini-foto">
+              <img src="img/hotel-3.jpg" width="135" height="90" alt="Фото гостиницы">
+            </div>
+          	<ul class="item-list">
+          		<li class="hotel-item">
+                <a href="#hotel-item">Villas at poco diablo</a>
+          		</li>
+          		<li>
+          			<p>Апартаменты</p>
+          		</li>
+          		<li>
+          			<p>от 2000 р.</p>
+          		</li>
+              <li class="button-detailed">
+                <a href="#detailed">Подробнее</a>
+              </li>
+              <li class="button-book">
+                <a href="#book">Забронировать</a>
+              </li>
+          	</ul>
           </div>
-  				<ul class="item-list">
-  					<li class="hotel-item">
-              <a href="#hotel-item">Villas at poco diablo</a>
-  					</li>
-  					<li>
-  						<p>Апартаменты</p>
-  					</li>
-  					<li>
-  						<p>от 2000 р.</p>
-  					</li>
-            <li class="button-detailed">
-              <a href="#detailed">Подробнее</a>
-            </li>
-            <li class="button-book">
-              <a href="#book">Забронировать</a>
-            </li>
-  				</ul>
-  			</div>
-  			<div class="item-rating">
-  				<div class="item-rating-stars">
-  					<span class="rating-stars"><img src="img/star.svg" alt="*"></span>
-  					<span class="rating-stars"><img src="img/star.svg" alt="*"></span>
-  				</div>
-  				<p class="rating">Рейтинг: 9.2</p>
-  			</div>
+          <div class="item-rating">
+          	<div class="item-rating-stars">
+          		<span class="rating-stars">
+                <img src="img/star.svg" alt="*">
+              </span>
+          		<span class="rating-stars">
+                <img src="img/star.svg" alt="*">
+              </span>
+          	</div>
+          	<div class="wrapper-rating">
+              <p class="rating">Рейтинг: 9,2</p>
+            </div>
+          </div>
         </div>
 
-        <div class="plug-footer"></div>
+        <!-- Заглушка блок для подвала -->
+
+        <div class="plug-footer">
+        </div>
+
   		</section>
+
+      <!-- Конец основного содержимого -->
+
   	</main>
+
+    <!-- Подвал -->
 
   	<footer class="main-footer">
       <div class="visit-sedona-instagram">
@@ -234,10 +290,10 @@
       </div>
       <div class="main-footer-copyright">
         <p>WebSite by</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
-          </a>
-        </div>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
+        </a>
+      </div>
     </footer>
 	
 </body>
