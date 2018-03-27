@@ -410,6 +410,10 @@ input[type="number"] {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.social-button-item:active path {
+	fill: rgba(255, 255, 255, 0.3);
+}
+
 .main-footer {
 	position: relative;
 	margin-top: -120px;
@@ -459,6 +463,19 @@ input[type="number"] {
 	top: 16px;
 }
 
+.main-footer-copyright svg {
+	width: 115px;
+	height: 41px;
+}
+
+.main-footer-copyright a:hover path {
+	fill: #81b3d2;
+}
+
+.main-footer-copyright a:active path {
+	fill: #bdbbbc;
+}
+
 /** Вторая страница **/
 
 .form-settings {
@@ -474,23 +491,23 @@ input[type="number"] {
 .form-columns {
 	display: flex;
 	justify-content: flex-start;
-	padding-top: 29px;
+	padding-top: 28px;
 }
 
 .form-settings .infrastructure {
 	width: 312px;
-	padding-left: 72px;
+	padding-left: 62px;
 }
 
 .form-settings .housing {
 	width: 288px;
-	padding-left: 15px;
+	padding-left: 7px;
 }
 
 .form-settings .cost {
 	width: 328px;
 	margin-left: 200px;
-	padding-left: 10px;
+	padding-left: 14px;
 }
 
 .form-settings fieldset {
@@ -506,6 +523,7 @@ input[type="number"] {
 .form-settings ul {
 	font-size: 14px;
 	line-height: 21px;
+	padding-top: 18px;
 }
 
 .results {
@@ -571,17 +589,6 @@ input[type="number"] {
 	border-bottom: 1px dotted #81b3d2;
 }
 
-.results-sort-list-item a {
-	font-size: 0px;
-	border: none;
-	padding-right: 12px;
-}
-
-.results .active-results {
-	border: none;
-	color: #81b3d2;
-}
-
 .results a:hover {
 	color: #81b3d2;
 	border-bottom: 1px dotted #81b3d2;
@@ -590,6 +597,33 @@ input[type="number"] {
 .results a:active {
 	color: #000000;
 	border: none;
+}
+
+.results-sort-list-item a {
+	font-size: 0px;
+	border: none;
+	padding-right: 12px;
+}
+
+.results-sort-list-item a:hover {
+	border: none;
+}
+
+.results-sort-list-item path:hover {
+	fill: #000000;
+}
+
+.results-sort-list-item path:active {
+	fill: #81b3d2;
+}
+
+.sort-active path {
+	fill: #81b3d2;
+}
+
+.results .active-results {
+	border: none;
+	color: #81b3d2;
 }
 
 .results-page {
@@ -744,4 +778,186 @@ input[type="number"] {
 
 .plug-footer {
 	min-height: 120px;
+}
+
+/** Сложный фильтр в «Седоне» **/
+
+.filter-range {
+  width: 316px;
+  margin: -1px auto;
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 147px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 83px;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.price-controls input[type="text"] {
+	padding-left: 0;
+}
+
+/* Чекбоксы в «Седоне» */
+
+input[type="checkbox"] {
+	display: none;
+}
+
+.infrastructure label,
+.housing label {
+	width: 50%;
+	height: 23px;
+	display: block;
+	position: relative;
+	padding-left: 40px;
+}
+
+.infrastructure li,
+.housing li {
+	margin-bottom: 23px;
+}
+
+.infrastructure li:last-child,
+.housing li:last-child {
+	margin-bottom: 0;
+}
+
+input[type="checkbox"] + span {
+	position: absolute;
+	left: 0; 
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked + span {
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
 }
