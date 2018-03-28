@@ -409,6 +409,10 @@ input[type="text"] {
 	border: 2px solid #e5e5e5;
 }
 
+input[type="text"]::-ms-clear {
+	display: none;
+}
+
 .plus-minus-button {
 	color: #a9a9a9;
 	font-weight: 700;
@@ -435,8 +439,14 @@ input[type="text"] {
 	text-transform: uppercase;
 }
 
+.main-footer-copyright svg,
+.social-button-item svg {
+	pointer-events: none;
+}
+
 .button-find:hover,
-.social-button a:hover {
+.social-button a:hover,
+.social-button a:focus {
 	background-color: #669ec0;
 }
 
@@ -462,7 +472,7 @@ input[type="text"] {
 
 .main-footer div {
 	width: 400px;
-	padding-top: 25px;
+	padding-top: 35px;
 }
 
 .visit-sedona-instagram a {
@@ -495,8 +505,8 @@ input[type="text"] {
 }
 
 .main-footer-copyright a {
-	position: relative;
-	top: 16px;
+	display: inline-block;
+    vertical-align: middle;
 }
 
 .main-footer-copyright svg {
@@ -504,7 +514,8 @@ input[type="text"] {
 	height: 41px;
 }
 
-.main-footer-copyright a:hover path {
+.main-footer-copyright a:hover path,
+.main-footer-copyright a:focus path {
 	fill: #81b3d2;
 }
 
@@ -601,12 +612,13 @@ input[type="text"] {
 .results-list {
 	width: 288px;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	align-items: baseline;
+    padding-top: 29px;
 }
 
 .results-list-item {
 	padding-left: 30px;
+	margin-left: 5px;
 }
 
 .results-sort-list {
@@ -712,6 +724,7 @@ input[type="text"] {
 }
 
 .item-list {
+	width: 393px;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: left;
