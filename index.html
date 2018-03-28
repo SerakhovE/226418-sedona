@@ -45,7 +45,7 @@
       <!-- Первый блок -->
 
   		<div class="intro">
-  			<h1>Седона &#8212; небольшой городок в аризоне,<br>заслуживащий большего!</h1>
+  			<h1>Седона &#8212; небольшой городок в аризоне, заслуживащий большего!</h1>
   			<p>Рассмотрим 5 причин, по которым седона круче, чем граед каньон!</p>
   		</div>
   		<section class="advantages">
@@ -70,17 +70,17 @@
         <h2 class="visually-hidden">Особенности городока «Седона»</h2>
         <ul class="features-list">
           <li class="features-item">
-            <img src="img/icon-1.svg" alt="Домик" width="75" height="72">
+            <!--<img src="img/icon-1.svg" alt="Домик" width="75" height="72">-->
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
 				  <li class="features-item">
-            <img src="img/icon-3.svg" alt="Бургер" width="74" height="70">
+            <!--<img src="img/icon-3.svg" alt="Бургер" width="74" height="70">-->
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="features-item">
-            <img src="img/icon-2.svg" alt="Подарок" width="64" height="76">
+            <!--<img src="img/icon-2.svg" alt="Подарок" width="64" height="76">-->
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -145,22 +145,24 @@
             <div class="wrapper-modal-block">
               <p class="full-width">       
                 <label for="arrival-id">Дата заезда:</label>
-                <input class="form-date" type="text" name="date-arrival" id="arrival-id" value="24.04.2017">
+                <input class="form-date" type="text" name="date-arrival" id="arrival-id" value="24 АПРЕЛЯ 2017">
+                <span class="search-form-calendar">Календарь</span>
               </p>
               <p class="full-width">
                 <label for="departure-id">Дата выезда:</label>
-                <input class="form-date" type="text" name="date-departure" id="departure-id" value="04.07.2017">
+                <input class="form-date" type="text" name="date-departure" id="departure-id" value="4 ИЮЛЯ 2017">
+                <span class="search-form-calendar">Календарь</span>
               </p>
               <p class="half-width">
                 <label class="adults" for="adults-id">Взрослые:</label>
                 <button class="plus-minus-button" type="button">-</button>
-                <input type="number" name="adults-sum" id="adults-id" value="2">
+                <input type="text" name="adults-sum" id="adults-id" pattern="[0-9]*" value="2" min="0">
                 <button class="plus-minus-button" type="button">+</button>
               </p>
               <p class="half-width">
                 <label class="child" for="child-id">Дети:</label>
                 <button class="plus-minus-button" type="button">-</button>
-                <input type="number" name="child-sum" id="child-id" value="0">
+                <input type="text" name="child-sum" id="child-id" pattern="[0-9]*" value="0" min="0">
                 <button class="plus-minus-button" type="button">+</button>
               </p>
               <button class="button-find" type="button">Найти</button>

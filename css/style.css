@@ -137,11 +137,15 @@ a {
  	font-weight: 700;
  	padding-top: 60px;
  	padding-bottom: 27px;
+ 	padding-left: 375px;
+ 	padding-right: 375px;
  }
 
 .intro p {
 	color: #333333;
 	padding-bottom: 51px;
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
 .advantages-list {
@@ -161,9 +165,10 @@ a {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 49px;
+	padding-right: 49px;
 	padding-top: 19px;
+	padding-bottom: 20px;
 }
 
 .features-list {
@@ -172,19 +177,36 @@ a {
 	display: flex;
 	min-height: 330px;
 	justify-content: space-around;
-	align-items: center;
 }
 
 .features-item {
-	width: 33%;
+	width: 400px;
+}
+
+.features-item::before {
+	display: block;
+	width: auto;
+	height: 132px;
+	content: "";
+	background-image: url("../img/icon-1.svg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+.features-item:nth-child(2)::before {
+	background-image: url("../img/icon-3.svg");
+}
+
+.features-item:nth-child(3)::before {
+	background-image: url("../img/icon-2.svg");
 }
 
 .features-list h3 {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 29px;
+	padding-bottom: 24px;
 }
 
 .features-list p {
@@ -192,14 +214,16 @@ a {
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
-	padding: 0 70px 25px 70px;
+	padding-left: 57px;
+	padding-right: 57px;
+	padding-bottom: 20px;
 }
 
 .one-list,
 .two-list,
 .last {
 	display: flex;
-	height: 256px;
+	min-height: 256px;
 }
 
 .one-list .advantages-item:first-child {
@@ -208,7 +232,8 @@ a {
 
 .one-list .advantages-item:last-child {
 	width: 800px;
-	background-image: url("../img/city.jpg");
+	min-height: 256px;
+	background-image: url("../img/city-big.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 }
@@ -219,7 +244,8 @@ a {
 
 .two-list .advantages-item:first-child {
 	width: 800px;
-	background-image: url("../img/bridge.jpg");
+	min-height: 256px;
+	background-image: url("../img/bridge-big.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 }
@@ -238,11 +264,13 @@ a {
 }
 
 .last .advantages-item {
-	width: 33%;
+	width: 400px;
 }
 
 .last p {
 	color: #333333;
+	padding-left: 68px;
+	padding-right: 68px;
 }
 
 .search-form-wrapper{
@@ -251,19 +279,23 @@ a {
 
 .search-form {
 	background-color: #ffffff;
-	position: relative;
 	min-height: 884px;
 }
 
 .block-search {
+	position: relative;
+}
+
+.modal-block {
 	position: absolute;
-	top: 205px;
+	top: -679px;
 	left: calc(50% - 284px);
 	text-align: left;
 }
 
 .full-width {
 	margin-bottom: 30px;
+	position: relative;
 }
 
 .full-width label {
@@ -275,19 +307,19 @@ input[type="text"] {
 	display: inline-block;
 	width: 342px;
 	height: 38px;
-	padding-left: 15px;
+	padding-left: 12px;
 }
 
 .half-width {
 	display: inline-block;
 }
 
-input[type="number"] {
+.half-width input[type="text"] {
 	padding-left: 15px;
 }
 
 .plus-minus-button,
-input[type="number"] {
+.half-width input[type="text"] {
 	width: 38px;
 	height: 38px;
 	margin-right: -4px;
@@ -327,6 +359,12 @@ input[type="number"] {
 	color: #333333;
 }
 
+.search-form-wrapper p {
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-bottom: 102px;
+}
+
 .search {
 	background-color: #766357;
 	color: #ffffff;
@@ -349,8 +387,7 @@ input[type="number"] {
 }
 
 .block-search p,
-.block-search input[type="text"],
-.block-search input[type="number"] {
+.block-search input[type="text"] {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 700;
@@ -358,7 +395,6 @@ input[type="number"] {
 }
 
 .block-search input[type="text"],
-.block-search input[type="number"],
 .plus-minus-button {
 	border: none;
 	background-color: #f2f2f2;
@@ -418,15 +454,15 @@ input[type="number"] {
 	position: relative;
 	margin-top: -120px;
 	min-height: 120px;
-	display: flex;
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.9);
-	justify-content: space-between;
-	align-items: center;
+	display: flex;
+	align-items: baseline;
 }
 
 .main-footer div {
-	width: 33%;
+	width: 400px;
+	padding-top: 25px;
 }
 
 .visit-sedona-instagram a {
@@ -454,7 +490,7 @@ input[type="number"] {
 
 .main-footer-copyright p {
 	display: inline-block;
-	padding-right: 6px;
+	padding-right: 4px;
 	padding-bottom: 25px;
 }
 
@@ -959,5 +995,17 @@ input[type="checkbox"] + span {
 
 input[type="checkbox"]:checked + span {
 	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+}
+
+.search-form-calendar {
+	position: absolute;
+	top: 7px;
+	left: 426px;
+	font-size: 0;
+	width: 21px;
+	height: 22px;
+	cursor: pointer;
+	background-image: url("../img/calendar.svg");
 	background-repeat: no-repeat;
 }
