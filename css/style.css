@@ -1,11 +1,13 @@
 html {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 *, 
 *::before, 
 *::after {
-	box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
 	margin: 0;
 	padding: 0;
 }
@@ -21,7 +23,8 @@ body {
 	color: #000000;
 
 	background-color: #f2f2f2;
-	box-shadow: 0 0 40px -10px #000000;
+	-webkit-box-shadow: 0 0 40px -10px #000000;
+	        box-shadow: 0 0 40px -10px #000000;
 }
 
 a {
@@ -62,6 +65,8 @@ a {
 }
 
 .main-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	line-height: 54px;
 }
@@ -174,9 +179,12 @@ a {
 .features-list {
 	color: #000000;
 	background-color: #ffffff;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	min-height: 330px;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 .features-item {
@@ -222,6 +230,8 @@ a {
 .one-list,
 .two-list,
 .last {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	min-height: 256px;
 }
@@ -260,7 +270,9 @@ a {
 .last {
 	background-color: #eeeeee;
 	color: #000000;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .last .advantages-item {
@@ -341,7 +353,8 @@ input[type="text"] {
 	width: 568px;
 	min-height: 395px;
 	padding: 55px 57px;
-	box-shadow: 0 0 40px -10px #000000;
+	-webkit-box-shadow: 0 0 40px -10px #000000;
+	        box-shadow: 0 0 40px -10px #000000;
 }
 
 .search-form h2 {
@@ -456,7 +469,7 @@ input[type="text"]::-ms-clear {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.social-button-item:active path {
+.social-button-item a:active path {
 	fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -466,8 +479,12 @@ input[type="text"]::-ms-clear {
 	min-height: 120px;
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.9);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: baseline;
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
 }
 
 .main-footer div {
@@ -483,8 +500,12 @@ input[type="text"]::-ms-clear {
 }
 
 .social-button {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .social-button a {
@@ -536,8 +557,12 @@ input[type="text"]::-ms-clear {
 }
 
 .form-columns {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	padding-top: 28px;
 }
 
@@ -581,15 +606,23 @@ input[type="text"]::-ms-clear {
 	font-weight: 700;
 	text-align: left;
 	border-bottom: 1px solid #e5e5e5;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 .results-search {
 	width: 728px;
 	padding-left: 72px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 .results-sort {
@@ -611,8 +644,12 @@ input[type="text"]::-ms-clear {
 
 .results-list {
 	width: 288px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: baseline;
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
     padding-top: 29px;
 }
 
@@ -622,8 +659,11 @@ input[type="text"]::-ms-clear {
 }
 
 .results-sort-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	text-align: right;
 	padding-top: 29px;
 }
@@ -680,18 +720,32 @@ input[type="text"]::-ms-clear {
 
 .wrapper-item {
 	border-bottom: 1px solid #e5e5e5;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
-.item,
-.item-rating {
-	width: 600px;
+.item {
+	width: 700px;
 	min-height: 150px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .item-rating {
-	flex-direction: column;
+	width: 500px;
+	min-height: 150px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.item-rating {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 .item-rating-stars {
@@ -707,7 +761,7 @@ input[type="text"]::-ms-clear {
 .wrapper-rating {
 	padding-top: 40px;
 	padding-right: 72px;
-	padding-left: 417px;
+	padding-left: 317px;
 }
 
 .wrapper-rating .rating {
@@ -719,16 +773,21 @@ input[type="text"]::-ms-clear {
 	width: 237px;
 	min-height: 150px;
 	padding-top: 30px;
-	padding-left: 72px;
 	padding-right: 30px;
+	padding-left: 72px;
 }
 
 .item-list {
 	width: 393px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	text-align: left;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 
 .item-list .hotel-item {
@@ -832,138 +891,141 @@ input[type="text"]::-ms-clear {
 /** Сложный фильтр в «Седоне» **/
 
 .filter-range {
-  width: 316px;
-  margin: -1px auto;
+	width: 316px;
+	margin: -1px auto;
 
-  color: #ffffff;
-  text-transform: uppercase;
+	color: #ffffff;
+	text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+	margin-bottom: 9px;
 
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
 }
 
 .price-controls {
-  position: relative;
-  
-  height: 36px;
-  margin-bottom: 20px;
+	position: relative;
+	
+	height: 36px;
+	margin-bottom: 20px;
 
-  font-size: 0;
+	font-size: 0;
 
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
 
-  width: 2px;
-  height: 22px;
+	width: 2px;
+	height: 22px;
 
-  background: #ffffff;
-  transform: translate(-50%, -50%);
+	background: #ffffff;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
+	display: inline-block;
 
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
 
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 147px;
-  padding-left: 65px;
+	width: 147px;
+	padding-left: 65px;
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
+	width: 50px;
+	margin: 0;
 
-  color: inherit;
-  font: inherit;
+	color: inherit;
+	font: inherit;
 
-  background: none;
-  border: none;
+	background: none;
+	border: none;
 }
 
 .range-controls {
-  position: relative;
+	position: relative;
 
-  margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
+	height: 2px;
 
-  background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
+	width: 80%;
+	height: 2px;
 
-  background: #ffffff;
+	background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
+	position: absolute;
+	top: -9px;
 
-  width: 4px;
-  height: 4px;
+	width: 4px;
+	height: 4px;
 
-  background: #ababab;
-  border: 10px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+	background: #ababab;
+	border: 10px solid #ffffff;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	        box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+	background: #1c4f80;
 }
 
 .range-toggle-min {
-  left: 0;
+	left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+	left: 80%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 83px;
-  padding: 6px 35px;
+	display: block;
+	margin: 0 83px;
+	padding: 6px 35px;
 
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
 
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
+	color: #000000;
 
-  background: #ffffff;
+	background: #ffffff;
 }
 
 .price-controls input[type="text"] {
@@ -973,12 +1035,16 @@ input[type="text"]::-ms-clear {
 /* Чекбоксы в «Седоне» */
 
 input[type="checkbox"] {
-	display: none;
+	position: absolute;
+  	clip: rect(0 0 0 0);
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
 }
 
 .infrastructure label,
 .housing label {
-	width: 50%;
+	width: 100%;
 	height: 23px;
 	display: block;
 	position: relative;
@@ -1021,4 +1087,19 @@ input[type="checkbox"]:checked + span {
 	cursor: pointer;
 	background-image: url("../img/calendar.svg");
 	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+.search-form-calendar:hover {
+	opacity: 1;
+}
+
+.filter-input:focus + span {
+	outline: 2px solid #669ec0;
+	background-color: rgba(102, 158, 192, 0.3);
+}
+
+input[type="checkbox"]:disabled + span {
+	opacity: 0.3;
+	cursor: default;
 }
