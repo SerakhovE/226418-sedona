@@ -54,6 +54,11 @@ a {
 	z-index: 1;
 }
 
+.not-active {
+	pointer-events: none;
+	cursor: default;
+}
+
 .main-menu,
 .advantages-list,
 .features-list,
@@ -312,11 +317,14 @@ a {
 
 .full-width label {
 	display: inline-block;
+	vertical-align: middle;
 	width: 108px;
+	padding-top: 7px;
 }
 
 input[type="text"] {
 	display: inline-block;
+	vertical-align: top;
 	width: 342px;
 	height: 38px;
 	padding-left: 12px;
@@ -324,6 +332,7 @@ input[type="text"] {
 
 .half-width {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .half-width input[type="text"] {
@@ -339,13 +348,17 @@ input[type="text"] {
 
 .adults {
 	display: inline-block;
+	vertical-align: top;
 	width: 108px;
+	padding-top: 6px;
 }
 
 .child {
 	display: inline-block;
+	vertical-align: top;
 	width: 112px;
 	padding-left: 55px;
+	padding-top: 6px;
 }
 
 .wrapper-modal-block {
@@ -521,8 +534,10 @@ input[type="text"]::-ms-clear {
 
 .main-footer-copyright p {
 	display: inline-block;
+	vertical-align: top;
 	padding-right: 4px;
 	padding-bottom: 25px;
+	padding-top: 6px;
 }
 
 .main-footer-copyright a {
@@ -578,7 +593,7 @@ input[type="text"]::-ms-clear {
 
 .form-settings .cost {
 	width: 328px;
-	margin-left: 200px;
+	margin-left: 198px;
 	padding-left: 14px;
 }
 
@@ -1008,8 +1023,8 @@ input[type="text"]::-ms-clear {
 
 .btn-transparent {
 	display: block;
-	margin: 0 83px;
-	padding: 6px 35px;
+	margin: 0px 97px 0px 82px;
+	padding: 6px 33px;
 
 	font-size: 14px;
 	line-height: 20px;
